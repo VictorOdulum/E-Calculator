@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Calculator</title>
+</head>
+<body>
+    
+
+
+
+    <div class="nav">
+        <p>Victor's E-Calculator</p> 
+     
+         <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="triangle.html">Triangle</a></li>
+             <li><a href="circle.html">Circle</a></li>
+             <li><a href="square.html">Square</a></li>
+             <li><a href="polygon.html">Polygons</a></li>
+             
+             
+             
+             
+             </ul>
+              
+     </div>
+            
+             <div class="container">
+
+                <h2 style="text-align: center; ">Rectangle/Square Calculator</h2> 
+    <br>
+    <label for="number"> Length (cm) </label>
+    <input type="number" id="length">
+
+    <br><br>
+
+    <label for="number"> Breadth  (cm) </label>
+    <input type="number" id="breadth"><br> <br> <label for="answer" id="answer"></label><br> <br>
+    <button onclick="calculate()" id="myButton">Calculate</button><br> <br>
+    <button onclick="Clear()" id="myButton"> Clear</button>
+
+    </div>
+ <script>
+
+        function calculate()
+{
+    var length= document.getElementById ('length').value;
+    var breadth = document.getElementById ("breadth").value;
+    var answer = document.getElementById ('answer')
+
+    var area = breadth*length 
+
+    answer.innerHTML=area+"cm²" 
+
+
+
+}
+    function Clear()
+
+{
+    length= document.getElementById ('length').value="";
+    breadth = document.getElementById ("breadth").value="";
+    document.getElementById ('answer').innerHTML="";
+}
+    </script>
+</body>
+</html>

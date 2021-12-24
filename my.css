@@ -1,0 +1,35 @@
+*{
+    color: white;
+    background-color: indigo;
+    text-align: center;
+    background-image: url(kelly-sikken-3-Tc_5LROrM-unsplash.jpg);
+}
+#myButton
+{
+    color: black;
+    background: white;
+    padding: 5px 15px 5px 15px;
+    border-radius: 7px;
+    border: white solid;
+    box-shadow: black 2px 2px 2px;
+    cursor:pointer;
+
+}
+#myButton:hover{
+
+background: indigo;
+
+color: white;
+
+box-shadow: black 10px 10px 10px;
+
+}  
+div{
+
+    background-color: indigo;
+ height: 350px;
+ width: 300px;
+ 
+
+
+}

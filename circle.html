@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Calculator</title>
+</head>
+<body>
+    <div class="nav">
+        <p>Victor's E-Calculator</p> 
+     
+         <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="triangle.html">Triangle</a></li>
+             <li><a href="circle.html">Circle</a></li>
+             <li><a href="square.html">Square</a></li>
+             <li><a href="polygon.html">Polygons</a></li>
+             
+             
+             
+             
+             </ul>
+              
+     </div>
+
+     <div class="container">
+             <h1 style="text-align: center;">Circle Calculator</h1> 
+
+<br>
+<br>
+    <label for="number"> Radius (cm) </label>
+     <input type="number" id="radius">
+    <br><br>
+    <label for="answer" id="answer"></label>
+    <br> <br>
+    <button onclick="calculate()" id="myButton">Calculate</button><br> <br>
+    <button onclick="Clear()" id="myButton"> Clear</button>
+    </div>
+    <script>
+
+        function calculate()
+{
+
+    var radius= document.getElementById ('radius').value;
+
+    var answer = document.getElementById("answer")
+
+
+    
+
+    const pi= 22/7
+    var area= pi*radius*radius
+
+    answer.innerHTML = area+"cm²"
+
+
+}
+ 
+    function Clear()
+
+{
+
+    document.getElementById ('radius').value="";
+    document.getElementById ('answer').innerHTML="";
+}
+
+</script>
+</body>
+</html>
