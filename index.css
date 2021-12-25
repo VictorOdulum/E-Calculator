@@ -143,6 +143,7 @@ text-decoration: underline;
     
     .nav ul li{
         list-style: none;
+        font-size: x-small;
     }
     .nav ul li a{
         text-decoration: none;
