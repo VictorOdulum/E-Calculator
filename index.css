@@ -136,6 +136,7 @@ text-decoration: underline;
         display: flex;
         justify-content: space-evenly;
         margin-left: auto;
+        font-size: 15px;
         
     
     }
