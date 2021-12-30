@@ -134,9 +134,9 @@ text-decoration: underline;
     .nav ul
     {
         display: flex;
- 
+        justify-content: space-evenly;
         margin-left: auto;
-        font-size: 5px;
+        font-size: 2.5px;
         
     
     }
